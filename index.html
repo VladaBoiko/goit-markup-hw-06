@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Эффективные решения для вашего бизнеса</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -290,8 +290,7 @@
     </main>
     
         <footer>
-           
-          
+     
         <div class="footer">
             <div class="container footer-section">
                 <div class="footer-navigation">
@@ -333,6 +332,24 @@
             </li>
         </ul>
     </div>
+
+        <form name="footer-subscribe-form" autocomplete="on" class="footer-subscribe">
+            <div class="footer-form-container">
+            <label for="email" class="footer-subscribe-form-title">Подпишитесь на рассылку</label>               
+            <input class="footer-subscribe-place" type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            autofocus />
+            </div>
+            <button type="submit" class="footer-subscribe-form-button">Подписаться
+            <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            </button>
+        </form>
+
+    
         </div>
         </div>
     </footer>
