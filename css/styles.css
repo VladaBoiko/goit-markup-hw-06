@@ -387,7 +387,7 @@ textarea:focus + .icon {
     position: absolute;
     left: 76px;
 
-    display: inline-block;
+    display: block;
     width: 401px;
 
     font-family: 'Roboto';
@@ -400,8 +400,14 @@ textarea:focus + .icon {
     color: var(--main-text-color);
 }
 .form-agreement-checkbox{
-    appearance: none;
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 .icon-disagree{
     display: inline-block;
@@ -454,13 +460,6 @@ textarea:focus + .icon {
 .conditions{
     color: var(--focus-color);
 }
-
-
-
-
-
-
-
 .button-modal{
     position: absolute;
     top: 8px;
