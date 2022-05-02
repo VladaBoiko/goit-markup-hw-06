@@ -414,20 +414,8 @@ textarea:focus + .icon {
 .form-agreement-checkbox:checked + .form-agreement-icon.disagree{
    opacity: 0;
 }
-.form-agreement-icon.agree{
-    display: inline-block;
-    position: absolute;
-    left: 54px;
-    transform: translateY(+1px);
-   opacity: 0;  
-}
-.agree-icon{
-   fill: #188CE8; 
-   
-}
-.form-agreement-checkbox:checked ~ .form-agreement-icon.agree {
-    opacity: 1;
-}
+
+
 
 
 
