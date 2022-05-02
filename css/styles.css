@@ -381,9 +381,7 @@ textarea:focus + .icon {
     display: flex;
     width: 425px;
     height: 24px;
-    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .form-agreement-label {
     position: absolute;
@@ -405,16 +403,57 @@ textarea:focus + .icon {
     appearance: none;
     position: absolute;
 }
-.form-agreement-icon.disagree{
+.icon-disagree{
     display: inline-block;
     position: absolute;
     left: 52px;
-    transform: translateY(+1px);
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--title-text-color);
+    border-radius: 3px;
+    transition: all var(--main-transition);
 }
-.form-agreement-checkbox:checked + .form-agreement-icon.disagree{
-   opacity: 0;
+/* Я знаю що all казали не писати, але я вважаю недоречно збільшувати настільки код */
+.form-agreement-checkbox:checked + .icon-disagree{
+  background-color: var(--focus-color);
+  background-image: url(../images/icon\ check\(1\).svg);
+  background-origin: border-box;
+  border-color: var(--focus-color);
+}
+.form-agreement-button{
+    position: absolute;
+    bottom: 40px;
+    left: 165px;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /* на макеті тіні вказано в обох станах */
+    border-radius: 4px;
+    border: 2px solid var(--focus-color);
+
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--hero-text-color);
+    cursor: pointer;
+    transition: background-color var(--main-transition),
+    border-color var(--main-transition);
 }
 
+.form-agreement-button:hover,
+.form-agreement-button:focus{
+    background-color: var(--hero-button-fh-color);
+    border-color: (--hero-button-fh-color);
+}
+.conditions{
+    color: var(--focus-color);
+}
 
 
 
