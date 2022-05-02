@@ -281,7 +281,7 @@ background-color: var(--focus-color);
 
     color: var(--main-text-color);
 }
-.modal-field textarea {
+.modal-field input {
     resize: none;
     padding-top: 12px;
     padding-left: 42px;
@@ -293,8 +293,8 @@ background-color: var(--focus-color);
     transition: border-color var(--main-transition);
 }
 
-textarea:hover,
-textarea:focus {
+input:hover,
+input:focus {
     border-color: var(--focus-color);
 }
 .icon{
@@ -302,8 +302,8 @@ textarea:focus {
     pointer-events: none;
 }
 
-textarea:hover + .icon,
-textarea:focus + .icon {
+input:hover + .icon,
+input:focus + .icon {
     fill: var(--focus-color);
 }
 .modal-field.name{
