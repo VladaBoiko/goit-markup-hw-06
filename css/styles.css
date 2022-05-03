@@ -1004,13 +1004,10 @@ margin-bottom: 16px;
 
 .footer-subscribe{
     position: relative;
-    display: flex;
-    align-content: flex-end;
-    margin-left: 93px;
+    margin-left: auto
 }
 .footer-form-container {
     display: flex;
-    flex-direction: column;
 
 }
 .footer-form-container input{
@@ -1021,6 +1018,7 @@ margin-bottom: 16px;
     margin: 0;
     padding: 15px 16px;
     width: 358px;
+    height: 50px;
     background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1044,25 +1042,19 @@ margin-bottom: 16px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     
     color: var(--hero-text-color);
 }
 
 .footer-form-button {
-    position: absolute;
-    bottom: 1px;
-    right: -16px;
-    transform: translateX(+100%);
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin-left: 12px; */
     padding: 10px 28px;
-
     height: 50px;
     width: 200px;
 
