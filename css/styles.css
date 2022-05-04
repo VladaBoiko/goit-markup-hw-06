@@ -370,9 +370,8 @@ input:focus + .icon {
     color: rgba(117, 117, 117, 0.5);
 }
 .form-agreement{
-    position: absolute;
-    bottom: 120px;
-
+    position: relative;
+margin-top: 20px;
     display: flex;
     width: 425px;
     height: 24px;
@@ -380,7 +379,7 @@ input:focus + .icon {
 }
 .form-agreement-label {
     position: absolute;
-    left: 76px;
+    left: 36px;
 
     display: block;
     width: 401px;
@@ -407,7 +406,7 @@ input:focus + .icon {
 .icon-disagree{
     display: inline-block;
     position: absolute;
-    left: 52px;
+    left: 12px;
     width: 16px;
     height: 15px;
     border: 1px solid var(--title-text-color);
